@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD5326682409F2D800043426 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326672409F2D800043426 /* AppDelegate.m */; };
+		CD53266B2409F2D800043426 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD53266A2409F2D800043426 /* SceneDelegate.m */; };
+		CD5326732409F2DC00043426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5326722409F2DC00043426 /* Assets.xcassets */; };
+		CD5326762409F2DC00043426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5326742409F2DC00043426 /* LaunchScreen.storyboard */; };
+		CD5326792409F2DC00043426 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326782409F2DC00043426 /* main.m */; };
+		CD5326832409F2DC00043426 /* FoundtionPractiveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326822409F2DC00043426 /* FoundtionPractiveUITests.m */; };
+		CD5326932409F4BD00043426 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326922409F4BD00043426 /* MainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD53267F2409F2DC00043426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD53265B2409F2D800043426 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD5326622409F2D800043426;
+			remoteInfo = FoundtionPractive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD5326632409F2D800043426 /* FoundtionPractive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundtionPractive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5326662409F2D800043426 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD5326672409F2D800043426 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD5326692409F2D800043426 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		CD53266A2409F2D800043426 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		CD5326722409F2DC00043426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD5326752409F2DC00043426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD5326772409F2DC00043426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5326782409F2DC00043426 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD53267E2409F2DC00043426 /* FoundtionPractiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundtionPractiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5326822409F2DC00043426 /* FoundtionPractiveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoundtionPractiveUITests.m; sourceTree = "<group>"; };
+		CD5326842409F2DC00043426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD5326912409F4BD00043426 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CD5326922409F4BD00043426 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD5326602409F2D800043426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD53267B2409F2DC00043426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD53265A2409F2D800043426 = {
+			isa = PBXGroup;
+			children = (
+				CD5326652409F2D800043426 /* FoundtionPractive */,
+				CD5326812409F2DC00043426 /* FoundtionPractiveUITests */,
+				CD5326642409F2D800043426 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD5326642409F2D800043426 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD5326632409F2D800043426 /* FoundtionPractive.app */,
+				CD53267E2409F2DC00043426 /* FoundtionPractiveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD5326652409F2D800043426 /* FoundtionPractive */ = {
+			isa = PBXGroup;
+			children = (
+				CD5326902409F49E00043426 /* ViewController */,
+				CD53268F2409F3E200043426 /* source */,
+				CD53268E2409F3B800043426 /* appdelegate */,
+				CD5326772409F2DC00043426 /* Info.plist */,
+			);
+			path = FoundtionPractive;
+			sourceTree = "<group>";
+		};
+		CD5326812409F2DC00043426 /* FoundtionPractiveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD5326822409F2DC00043426 /* FoundtionPractiveUITests.m */,
+				CD5326842409F2DC00043426 /* Info.plist */,
+			);
+			path = FoundtionPractiveUITests;
+			sourceTree = "<group>";
+		};
+		CD53268E2409F3B800043426 /* appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CD5326782409F2DC00043426 /* main.m */,
+				CD5326662409F2D800043426 /* AppDelegate.h */,
+				CD5326672409F2D800043426 /* AppDelegate.m */,
+				CD5326692409F2D800043426 /* SceneDelegate.h */,
+				CD53266A2409F2D800043426 /* SceneDelegate.m */,
+			);
+			path = appdelegate;
+			sourceTree = "<group>";
+		};
+		CD53268F2409F3E200043426 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				CD5326722409F2DC00043426 /* Assets.xcassets */,
+				CD5326742409F2DC00043426 /* LaunchScreen.storyboard */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		CD5326902409F49E00043426 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD5326912409F4BD00043426 /* MainViewController.h */,
+				CD5326922409F4BD00043426 /* MainViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD5326622409F2D800043426 /* FoundtionPractive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5326872409F2DC00043426 /* Build configuration list for PBXNativeTarget "FoundtionPractive" */;
+			buildPhases = (
+				CD53265F2409F2D800043426 /* Sources */,
+				CD5326602409F2D800043426 /* Frameworks */,
+				CD5326612409F2D800043426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoundtionPractive;
+			productName = FoundtionPractive;
+			productReference = CD5326632409F2D800043426 /* FoundtionPractive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD53267D2409F2DC00043426 /* FoundtionPractiveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD53268A2409F2DC00043426 /* Build configuration list for PBXNativeTarget "FoundtionPractiveUITests" */;
+			buildPhases = (
+				CD53267A2409F2DC00043426 /* Sources */,
+				CD53267B2409F2DC00043426 /* Frameworks */,
+				CD53267C2409F2DC00043426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD5326802409F2DC00043426 /* PBXTargetDependency */,
+			);
+			name = FoundtionPractiveUITests;
+			productName = FoundtionPractiveUITests;
+			productReference = CD53267E2409F2DC00043426 /* FoundtionPractiveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD53265B2409F2D800043426 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = wch;
+				TargetAttributes = {
+					CD5326622409F2D800043426 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					CD53267D2409F2DC00043426 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = CD5326622409F2D800043426;
+					};
+				};
+			};
+			buildConfigurationList = CD53265E2409F2D800043426 /* Build configuration list for PBXProject "FoundtionPractive" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD53265A2409F2D800043426;
+			productRefGroup = CD5326642409F2D800043426 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD5326622409F2D800043426 /* FoundtionPractive */,
+				CD53267D2409F2DC00043426 /* FoundtionPractiveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD5326612409F2D800043426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5326762409F2DC00043426 /* LaunchScreen.storyboard in Resources */,
+				CD5326732409F2DC00043426 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD53267C2409F2DC00043426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD53265F2409F2D800043426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5326682409F2D800043426 /* AppDelegate.m in Sources */,
+				CD5326792409F2DC00043426 /* main.m in Sources */,
+				CD53266B2409F2D800043426 /* SceneDelegate.m in Sources */,
+				CD5326932409F4BD00043426 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD53267A2409F2DC00043426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5326832409F2DC00043426 /* FoundtionPractiveUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD5326802409F2DC00043426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD5326622409F2D800043426 /* FoundtionPractive */;
+			targetProxy = CD53267F2409F2DC00043426 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD5326742409F2DC00043426 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD5326752409F2DC00043426 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD5326852409F2DC00043426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD5326862409F2DC00043426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD5326882409F2DC00043426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FoundtionPractive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apuray.FoundtionPractive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD5326892409F2DC00043426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FoundtionPractive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apuray.FoundtionPractive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD53268B2409F2DC00043426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FoundtionPractiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apuray.FoundtionPractiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FoundtionPractive;
+			};
+			name = Debug;
+		};
+		CD53268C2409F2DC00043426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FoundtionPractiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apuray.FoundtionPractiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FoundtionPractive;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD53265E2409F2D800043426 /* Build configuration list for PBXProject "FoundtionPractive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5326852409F2DC00043426 /* Debug */,
+				CD5326862409F2DC00043426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5326872409F2DC00043426 /* Build configuration list for PBXNativeTarget "FoundtionPractive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5326882409F2DC00043426 /* Debug */,
+				CD5326892409F2DC00043426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD53268A2409F2DC00043426 /* Build configuration list for PBXNativeTarget "FoundtionPractiveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD53268B2409F2DC00043426 /* Debug */,
+				CD53268C2409F2DC00043426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD53265B2409F2D800043426 /* Project object */;
+}
