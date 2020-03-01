@@ -14,6 +14,20 @@
 		CD5326792409F2DC00043426 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326782409F2DC00043426 /* main.m */; };
 		CD5326832409F2DC00043426 /* FoundtionPractiveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326822409F2DC00043426 /* FoundtionPractiveUITests.m */; };
 		CD5326932409F4BD00043426 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326922409F4BD00043426 /* MainViewController.m */; };
+		CD5326972409F69200043426 /* RunloopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326962409F69200043426 /* RunloopViewController.m */; };
+		CD53269B2409F82700043426 /* UIView+YSLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326992409F82700043426 /* UIView+YSLayout.m */; };
+		CD5326A1240A1AF400043426 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326A0240A1AF400043426 /* GCDViewController.m */; };
+		CD5326A4240A329100043426 /* WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326A3240A329100043426 /* WeakTimer.m */; };
+		CD5326A7240A537000043426 /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326A6240A537000043426 /* RunTimeViewController.m */; };
+		CD5326AA240A53D800043426 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326A9240A53D800043426 /* Person.m */; };
+		CD5326AD240A53EC00043426 /* Xiaoming.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326AC240A53EC00043426 /* Xiaoming.m */; };
+		CD5326B0240A665300043426 /* NSString+AAAA.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326AF240A665300043426 /* NSString+AAAA.m */; };
+		CD5326B3240A66E400043426 /* NSString+BBBBBBB.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326B2240A66E400043426 /* NSString+BBBBBBB.m */; };
+		CD5326BF240A7E0200043426 /* Xiaoming+AAAAA.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326BD240A7E0200043426 /* Xiaoming+AAAAA.m */; };
+		CD5326C7240A804D00043426 /* Xiaoming+BBBBBBB.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326C3240A804D00043426 /* Xiaoming+BBBBBBB.m */; };
+		CD5326C8240A804D00043426 /* Xiaoming+CCCCCC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326C5240A804D00043426 /* Xiaoming+CCCCCC.m */; };
+		CD5326CE240A927F00043426 /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326CD240A927F00043426 /* NSOperationViewController.m */; };
+		CD5326D1240AA8A500043426 /* CustomUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326D0240AA8A500043426 /* CustomUIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +55,35 @@
 		CD5326842409F2DC00043426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD5326912409F4BD00043426 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		CD5326922409F4BD00043426 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CD5326952409F69200043426 /* RunloopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopViewController.h; sourceTree = "<group>"; };
+		CD5326962409F69200043426 /* RunloopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopViewController.m; sourceTree = "<group>"; };
+		CD5326992409F82700043426 /* UIView+YSLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YSLayout.m"; sourceTree = "<group>"; };
+		CD53269A2409F82700043426 /* UIView+YSLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YSLayout.h"; sourceTree = "<group>"; };
+		CD53269C2409F86F00043426 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CD53269F240A1AF400043426 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		CD5326A0240A1AF400043426 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		CD5326A2240A329100043426 /* WeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakTimer.h; sourceTree = "<group>"; };
+		CD5326A3240A329100043426 /* WeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakTimer.m; sourceTree = "<group>"; };
+		CD5326A5240A537000043426 /* RunTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
+		CD5326A6240A537000043426 /* RunTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
+		CD5326A8240A53D800043426 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		CD5326A9240A53D800043426 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		CD5326AB240A53EC00043426 /* Xiaoming.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Xiaoming.h; sourceTree = "<group>"; };
+		CD5326AC240A53EC00043426 /* Xiaoming.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Xiaoming.m; sourceTree = "<group>"; };
+		CD5326AE240A665300043426 /* NSString+AAAA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+AAAA.h"; sourceTree = "<group>"; };
+		CD5326AF240A665300043426 /* NSString+AAAA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+AAAA.m"; sourceTree = "<group>"; };
+		CD5326B1240A66E400043426 /* NSString+BBBBBBB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+BBBBBBB.h"; sourceTree = "<group>"; };
+		CD5326B2240A66E400043426 /* NSString+BBBBBBB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+BBBBBBB.m"; sourceTree = "<group>"; };
+		CD5326BA240A7E0100043426 /* Xiaoming+AAAAA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Xiaoming+AAAAA.h"; sourceTree = "<group>"; };
+		CD5326BD240A7E0200043426 /* Xiaoming+AAAAA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Xiaoming+AAAAA.m"; sourceTree = "<group>"; };
+		CD5326C3240A804D00043426 /* Xiaoming+BBBBBBB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Xiaoming+BBBBBBB.m"; sourceTree = "<group>"; };
+		CD5326C4240A804D00043426 /* Xiaoming+BBBBBBB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Xiaoming+BBBBBBB.h"; sourceTree = "<group>"; };
+		CD5326C5240A804D00043426 /* Xiaoming+CCCCCC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Xiaoming+CCCCCC.m"; sourceTree = "<group>"; };
+		CD5326C6240A804D00043426 /* Xiaoming+CCCCCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Xiaoming+CCCCCC.h"; sourceTree = "<group>"; };
+		CD5326CC240A927F00043426 /* NSOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationViewController.h; sourceTree = "<group>"; };
+		CD5326CD240A927F00043426 /* NSOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationViewController.m; sourceTree = "<group>"; };
+		CD5326CF240AA8A500043426 /* CustomUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomUIView.h; sourceTree = "<group>"; };
+		CD5326D0240AA8A500043426 /* CustomUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomUIView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +125,7 @@
 		CD5326652409F2D800043426 /* FoundtionPractive */ = {
 			isa = PBXGroup;
 			children = (
+				CD5326982409F81300043426 /* Base */,
 				CD5326902409F49E00043426 /* ViewController */,
 				CD53268F2409F3E200043426 /* source */,
 				CD53268E2409F3B800043426 /* appdelegate */,
@@ -107,6 +151,7 @@
 				CD5326672409F2D800043426 /* AppDelegate.m */,
 				CD5326692409F2D800043426 /* SceneDelegate.h */,
 				CD53266A2409F2D800043426 /* SceneDelegate.m */,
+				CD53269C2409F86F00043426 /* PrefixHeader.pch */,
 			);
 			path = appdelegate;
 			sourceTree = "<group>";
@@ -123,10 +168,69 @@
 		CD5326902409F49E00043426 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CD5326942409F64F00043426 /* 01.runloop */,
+				CD53269D2409FE4600043426 /* 02.runtime */,
+				CD53269E2409FE5300043426 /* 03.thread */,
 				CD5326912409F4BD00043426 /* MainViewController.h */,
 				CD5326922409F4BD00043426 /* MainViewController.m */,
+				CD5326CF240AA8A500043426 /* CustomUIView.h */,
+				CD5326D0240AA8A500043426 /* CustomUIView.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CD5326942409F64F00043426 /* 01.runloop */ = {
+			isa = PBXGroup;
+			children = (
+				CD5326952409F69200043426 /* RunloopViewController.h */,
+				CD5326962409F69200043426 /* RunloopViewController.m */,
+				CD5326A2240A329100043426 /* WeakTimer.h */,
+				CD5326A3240A329100043426 /* WeakTimer.m */,
+			);
+			path = 01.runloop;
+			sourceTree = "<group>";
+		};
+		CD5326982409F81300043426 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CD53269A2409F82700043426 /* UIView+YSLayout.h */,
+				CD5326992409F82700043426 /* UIView+YSLayout.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CD53269D2409FE4600043426 /* 02.runtime */ = {
+			isa = PBXGroup;
+			children = (
+				CD5326C4240A804D00043426 /* Xiaoming+BBBBBBB.h */,
+				CD5326C3240A804D00043426 /* Xiaoming+BBBBBBB.m */,
+				CD5326C6240A804D00043426 /* Xiaoming+CCCCCC.h */,
+				CD5326C5240A804D00043426 /* Xiaoming+CCCCCC.m */,
+				CD5326BA240A7E0100043426 /* Xiaoming+AAAAA.h */,
+				CD5326BD240A7E0200043426 /* Xiaoming+AAAAA.m */,
+				CD5326A8240A53D800043426 /* Person.h */,
+				CD5326A9240A53D800043426 /* Person.m */,
+				CD5326AB240A53EC00043426 /* Xiaoming.h */,
+				CD5326AC240A53EC00043426 /* Xiaoming.m */,
+				CD5326AE240A665300043426 /* NSString+AAAA.h */,
+				CD5326AF240A665300043426 /* NSString+AAAA.m */,
+				CD5326B1240A66E400043426 /* NSString+BBBBBBB.h */,
+				CD5326B2240A66E400043426 /* NSString+BBBBBBB.m */,
+				CD5326A5240A537000043426 /* RunTimeViewController.h */,
+				CD5326A6240A537000043426 /* RunTimeViewController.m */,
+			);
+			path = 02.runtime;
+			sourceTree = "<group>";
+		};
+		CD53269E2409FE5300043426 /* 03.thread */ = {
+			isa = PBXGroup;
+			children = (
+				CD53269F240A1AF400043426 /* GCDViewController.h */,
+				CD5326A0240A1AF400043426 /* GCDViewController.m */,
+				CD5326CC240A927F00043426 /* NSOperationViewController.h */,
+				CD5326CD240A927F00043426 /* NSOperationViewController.m */,
+			);
+			path = 03.thread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,10 +332,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD53269B2409F82700043426 /* UIView+YSLayout.m in Sources */,
+				CD5326B0240A665300043426 /* NSString+AAAA.m in Sources */,
+				CD5326B3240A66E400043426 /* NSString+BBBBBBB.m in Sources */,
+				CD5326D1240AA8A500043426 /* CustomUIView.m in Sources */,
+				CD5326C7240A804D00043426 /* Xiaoming+BBBBBBB.m in Sources */,
 				CD5326682409F2D800043426 /* AppDelegate.m in Sources */,
+				CD5326AA240A53D800043426 /* Person.m in Sources */,
+				CD5326A7240A537000043426 /* RunTimeViewController.m in Sources */,
 				CD5326792409F2DC00043426 /* main.m in Sources */,
+				CD5326972409F69200043426 /* RunloopViewController.m in Sources */,
+				CD5326AD240A53EC00043426 /* Xiaoming.m in Sources */,
+				CD5326A1240A1AF400043426 /* GCDViewController.m in Sources */,
+				CD5326CE240A927F00043426 /* NSOperationViewController.m in Sources */,
+				CD5326BF240A7E0200043426 /* Xiaoming+AAAAA.m in Sources */,
+				CD5326C8240A804D00043426 /* Xiaoming+CCCCCC.m in Sources */,
 				CD53266B2409F2D800043426 /* SceneDelegate.m in Sources */,
 				CD5326932409F4BD00043426 /* MainViewController.m in Sources */,
+				CD5326A4240A329100043426 /* WeakTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +423,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -361,6 +480,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -380,6 +500,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FoundtionPractive/appdelegate/PrefixHeader.pch";
 				INFOPLIST_FILE = FoundtionPractive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -396,6 +518,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FoundtionPractive/appdelegate/PrefixHeader.pch";
 				INFOPLIST_FILE = FoundtionPractive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
