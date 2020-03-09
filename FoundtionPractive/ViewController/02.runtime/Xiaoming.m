@@ -20,6 +20,24 @@
 
 @implementation Xiaoming
 
+- (NSUInteger)hash {
+    return [super hash];
+}
+
++(Xiaoming *)shareInstance{
+    static Xiaoming *xm;
+    
+    NSLog(@"wch-------------shareInstance--001----%ld",one);
+    dispatch_once(&one,^{
+        NSLog(@"wch-------------shareInstance--002");
+        xm = [[Xiaoming alloc] init];
+    });
+    return xm;
+}
+-(void)setNil{
+    one = 0;
+}
+
 +(void)initialize{
     NSLog(@"wch------------------xiaoming---initialize");
 }
@@ -43,6 +61,14 @@
 //    [self willChangeValueForKey:@"proSex"];
 //    _proSex = @"test---edit";
 //    [self didChangeValueForKey:@"proSex"];
+}
+
++(void)test2{
+    NSLog(@"wch----------------test2---01:");
+}
+
+-(void)test3{
+    NSLog(@"wch----------------test3---01:");
 }
 
 -(void)valueForUndefinedKey:(NSString *)key{

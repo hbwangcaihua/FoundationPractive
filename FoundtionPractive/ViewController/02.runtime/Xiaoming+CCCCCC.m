@@ -18,4 +18,8 @@
     NSLog(@"wch------------------CCCCCC---lod");
 }
 
+-(void)test{
+NSLog(@"wch------------------cccccccccc---test");
+}
+
 @end

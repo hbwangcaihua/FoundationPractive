@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Xiaoming (AAAAA)
 
+@property(nonatomic,strong) NSString *aaaaPro;
+
 @end
 
 NS_ASSUME_NONNULL_END

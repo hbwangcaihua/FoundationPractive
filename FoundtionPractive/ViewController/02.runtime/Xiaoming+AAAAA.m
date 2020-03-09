@@ -7,6 +7,7 @@
 //
 
 #import "Xiaoming+AAAAA.h"
+#import <objc/runtime.h>
 
 @implementation Xiaoming (AAAAA)
 
@@ -16,6 +17,18 @@
 
 +(void)load{
     NSLog(@"wch------------------AAAAAAAAA---lod");
+}
+
+-(void)test{
+NSLog(@"wch------------------AAAAAAAAA---test");
+}
+
+- (void)setAaaaPro:(NSString *)aaaaPro {
+     objc_setAssociatedObject(self,"name", aaaaPro,   OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+- (NSString *)aaaaPro {
+    
+    return objc_getAssociatedObject(self,"name");
 }
 
 @end

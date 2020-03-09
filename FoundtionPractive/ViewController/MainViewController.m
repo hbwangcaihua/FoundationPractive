@@ -12,6 +12,11 @@
 #import "RunTimeViewController.h"
 #import "NSOperationViewController.h"
 #import "CustomUIView.h"
+#import "BlockViewController.h"
+#import "Xiaoming.h"
+#import "TimerViewController.h"
+#import "CALayerViewController.h"
+#import "DictionaryViewController.h"
 
 @interface MainViewController ()
 
@@ -44,10 +49,26 @@
     operationBtn.top = runtimeBtn.bottom + 10;
     [self.view addSubview:operationBtn];
     
+    UIButton *blockBtn = [self createButton:@"05.block" tag:1005];
+    blockBtn.top = operationBtn.bottom + 10;
+    [self.view addSubview:blockBtn];
+    
+    UIButton *timerBtn = [self createButton:@"06.timer" tag:1006];
+    timerBtn.top = blockBtn.bottom + 10;
+    [self.view addSubview:timerBtn];
+    
+    UIButton *calayerBtn = [self createButton:@"07.CALayer" tag:1007];
+    calayerBtn.top = timerBtn.bottom + 10;
+    [self.view addSubview:calayerBtn];
+    
+    UIButton *dictionaryBtn = [self createButton:@"08.Dictionary" tag:1008];
+    dictionaryBtn.top = calayerBtn.bottom + 10;
+    [self.view addSubview:dictionaryBtn];
+    
     _customUIView = [[CustomUIView alloc] initWithFrame:CGRectMake(0, 300, 100, 100)];
     _customUIView.backgroundColor = [UIColor grayColor];
-    [self.view addSubview:_customUIView];
-    
+    _customUIView.aaa = @"sfasjfk122222";
+//    [self.view addSubview:_customUIView];
 }
 
 -(UIButton *)createButton:(NSString *)title tag:(NSInteger)tag{
@@ -66,6 +87,7 @@
     
     if(btn.tag==1001){
 //        [_customUIView setNeedsLayout];
+[_customUIView lay];
     
         RunloopViewController *runloopVC = [[RunloopViewController alloc] init];
         [self.navigationController pushViewController:runloopVC animated:YES];
@@ -77,6 +99,18 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if(btn.tag==1004){
         NSOperationViewController *vc = [[NSOperationViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if(btn.tag==1005){
+        BlockViewController *vc = [[BlockViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if(btn.tag==1006){
+        TimerViewController *vc = [[TimerViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if(btn.tag==1007){
+        CALayerViewController *vc = [[CALayerViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if(btn.tag==1008){
+        DictionaryViewController *vc = [[DictionaryViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

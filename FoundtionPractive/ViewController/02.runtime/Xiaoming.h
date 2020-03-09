@@ -9,7 +9,7 @@
 #import "Person.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
+static dispatch_once_t one;
 @interface Xiaoming : Person{
     NSString *chengyuanH;
 }
@@ -17,7 +17,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) NSString *proSex;
 @property(nonatomic,assign) int proAge;
 
++(Xiaoming *)shareInstance;
+
+-(void)setNil;
+
 -(void)test;
+
++(void)test2;
 
 @end
 

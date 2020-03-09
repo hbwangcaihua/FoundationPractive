@@ -10,27 +10,29 @@
 #import "Xiaoming.h"
 #import <objc/runtime.h>
 #import <objc/message.h>
+#import "Xiaoming+AAAAA.h"
 
 @interface RunTimeViewController ()
 
 @property(nonatomic,strong) Xiaoming *xm;
 
+//autorelease在didappear中已被释放
 @property(nonatomic,weak) NSString *weakString;
 
 @end
 
 @implementation RunTimeViewController
 
-//__weak NSString *_weakString = nil;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    _xm = [[Xiaoming alloc] init];
-
-   _weakString = [NSString stringWithFormat:@"aaaaabbb"];
+    _xm = [[Xiaoming alloc] init];
+    _xm.aaaaPro = @"aaaaPro";
+    
+//   _weakString = [NSString stringWithFormat:@"aaaaabbb"];
     
     //1. objc_msgSend
+//    objc_msgSend(_xm,@selector(test3)); //使用这种方式，需要设置 Enable Strict为NO
 //    ((id (*)(id, SEL))objc_msgSend)(xm, @selector(personEat));
 //    ((id (*)(id, SEL))objc_msgSend)(xm, sel_registerName("personEat"));
 
@@ -62,15 +64,23 @@
     
 //    //3. 遍历所有成员变量、方法
 //    unsigned int outCount = 0;
-//    Ivar *ivars = class_copyIvarList([xm class], &outCount);
+//    Ivar *ivars = class_copyIvarList([_xm class], &outCount);
 //    for(int i=0;i<outCount;i++){
 //        Ivar ivar = ivars[i];
 //        const char *name = ivar_getName(ivar);
 //        const char *type = ivar_getTypeEncoding(ivar);
 //        NSLog(@"wch------------%s,%s",name,type);
 //    }
+
+//    objc_property_t *props = class_copyPropertyList([_xm class], &outCount);
+//    for(int i=0;i<outCount;i++){
+//        objc_property_t prop = props[i];
+//        const char *name = property_getName(prop);
+//        NSLog(@"wch------------%s",name);
+//    }
+
 //
-//    Method *methods = class_copyMethodList([xm class], &outCount);
+//    Method *methods = class_copyMethodList([_xm class], &outCount);
 //    for(int i=0;i<outCount;i++){
 //        Method method = methods[i];
 //        SEL sel = method_getName(method);
@@ -101,7 +111,9 @@
 //    NSString *a = @"abcdefg";
 //    NSLog(@"wch----------------length:%@",[a substringToIndex:2]);
 //    xm.proSex = @"11111111";
-//    [xm addObserver:self forKeyPath:@"proSex" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
+//    [_xm addObserver:self forKeyPath:@"proSex" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:nil];
+//    _xm.proSex = @"11111111";
+//    [_xm setValue:@"sssss" forKey:@"proSex"];
 //
 //
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -156,13 +168,14 @@ void say(id self,SEL _cmd,NSString *aString)
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    NSLog(@"wch-----------------willappear--%@",_weakString);
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
-    NSLog(@"wch-----------------viewDidAppear--%@",_weakString);
+}
+
+-(void)dealloc{
+    NSLog(@"wch------------------dealloc");
 }
 
 @end

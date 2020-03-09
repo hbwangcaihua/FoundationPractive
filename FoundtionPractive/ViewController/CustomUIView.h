@@ -10,7 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CustomUIView : UIView
+@protocol tttttttttt <NSObject>
+
+@property(nonatomic,strong) NSString *aaa;
+
+@end
+
+@interface CustomUIView : UIView<tttttttttt>
 
 -(void)lay;
 
