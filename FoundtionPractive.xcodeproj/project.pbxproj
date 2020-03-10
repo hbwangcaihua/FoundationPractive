@@ -30,8 +30,13 @@
 		CD5326CE240A927F00043426 /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326CD240A927F00043426 /* NSOperationViewController.m */; };
 		CD5326D1240AA8A500043426 /* CustomUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326D0240AA8A500043426 /* CustomUIView.m */; };
 		CD7EC77C2415D5CE003C9A29 /* DictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7EC77B2415D5CE003C9A29 /* DictionaryViewController.m */; };
+		CD7EC77F2415D782003C9A29 /* ParentObj.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7EC77E2415D782003C9A29 /* ParentObj.m */; };
+		CD7EC785241658C1003C9A29 /* SonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7EC784241658C1003C9A29 /* SonObject.m */; };
+		CD7EC78924166A9A003C9A29 /* LockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7EC78824166A9A003C9A29 /* LockViewController.m */; };
 		CDADA54224107C33005F2C81 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADA54124107C33005F2C81 /* TimerViewController.m */; };
 		CDADA54624108B3E005F2C81 /* CALayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDADA54524108B3E005F2C81 /* CALayerViewController.m */; };
+		CDC8C02E241722F800240B04 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C02D241722F800240B04 /* GestureViewController.m */; };
+		CDC8C04124175FF100240B04 /* AsynViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC8C04024175FF100240B04 /* AsynViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,10 +98,20 @@
 		CD5326D2240BAAAB00043426 /* NSString+ExtString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ExtString.h"; sourceTree = "<group>"; };
 		CD7EC77A2415D5CE003C9A29 /* DictionaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictionaryViewController.h; sourceTree = "<group>"; };
 		CD7EC77B2415D5CE003C9A29 /* DictionaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictionaryViewController.m; sourceTree = "<group>"; };
+		CD7EC77D2415D782003C9A29 /* ParentObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParentObj.h; sourceTree = "<group>"; };
+		CD7EC77E2415D782003C9A29 /* ParentObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParentObj.m; sourceTree = "<group>"; };
+		CD7EC783241658C1003C9A29 /* SonObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SonObject.h; sourceTree = "<group>"; };
+		CD7EC784241658C1003C9A29 /* SonObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SonObject.m; sourceTree = "<group>"; };
+		CD7EC78724166A9A003C9A29 /* LockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockViewController.h; sourceTree = "<group>"; };
+		CD7EC78824166A9A003C9A29 /* LockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockViewController.m; sourceTree = "<group>"; };
 		CDADA54024107C33005F2C81 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		CDADA54124107C33005F2C81 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		CDADA54424108B3E005F2C81 /* CALayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALayerViewController.h; sourceTree = "<group>"; };
 		CDADA54524108B3E005F2C81 /* CALayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerViewController.m; sourceTree = "<group>"; };
+		CDC8C02C241722F800240B04 /* GestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
+		CDC8C02D241722F800240B04 /* GestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
+		CDC8C03F24175FF100240B04 /* AsynViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsynViewController.h; sourceTree = "<group>"; };
+		CDC8C04024175FF100240B04 /* AsynViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsynViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +212,9 @@
 				CDADA53F24107C17005F2C81 /* 05.timer */,
 				CDADA54324108B11005F2C81 /* 06.CALayer */,
 				CD7EC7792415D562003C9A29 /* 07.NSDictionary */,
+				CD7EC78624166A81003C9A29 /* 08.lock */,
+				CDC8C02B241722D500240B04 /* 09.gesture */,
+				CDC8C03E24175FC200240B04 /* 10.AsynDisplay */,
 				CD5326912409F4BD00043426 /* MainViewController.h */,
 				CD5326922409F4BD00043426 /* MainViewController.m */,
 				CD5326CF240AA8A500043426 /* CustomUIView.h */,
@@ -265,8 +283,21 @@
 			children = (
 				CD7EC77A2415D5CE003C9A29 /* DictionaryViewController.h */,
 				CD7EC77B2415D5CE003C9A29 /* DictionaryViewController.m */,
+				CD7EC77D2415D782003C9A29 /* ParentObj.h */,
+				CD7EC77E2415D782003C9A29 /* ParentObj.m */,
+				CD7EC783241658C1003C9A29 /* SonObject.h */,
+				CD7EC784241658C1003C9A29 /* SonObject.m */,
 			);
 			path = 07.NSDictionary;
+			sourceTree = "<group>";
+		};
+		CD7EC78624166A81003C9A29 /* 08.lock */ = {
+			isa = PBXGroup;
+			children = (
+				CD7EC78724166A9A003C9A29 /* LockViewController.h */,
+				CD7EC78824166A9A003C9A29 /* LockViewController.m */,
+			);
+			path = 08.lock;
 			sourceTree = "<group>";
 		};
 		CDADA53F24107C17005F2C81 /* 05.timer */ = {
@@ -285,6 +316,24 @@
 				CDADA54524108B3E005F2C81 /* CALayerViewController.m */,
 			);
 			path = 06.CALayer;
+			sourceTree = "<group>";
+		};
+		CDC8C02B241722D500240B04 /* 09.gesture */ = {
+			isa = PBXGroup;
+			children = (
+				CDC8C02C241722F800240B04 /* GestureViewController.h */,
+				CDC8C02D241722F800240B04 /* GestureViewController.m */,
+			);
+			path = 09.gesture;
+			sourceTree = "<group>";
+		};
+		CDC8C03E24175FC200240B04 /* 10.AsynDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				CDC8C03F24175FF100240B04 /* AsynViewController.h */,
+				CDC8C04024175FF100240B04 /* AsynViewController.m */,
+			);
+			path = 10.AsynDisplay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,10 +444,13 @@
 				CD5326A7240A537000043426 /* RunTimeViewController.m in Sources */,
 				CD5326792409F2DC00043426 /* main.m in Sources */,
 				CD5326972409F69200043426 /* RunloopViewController.m in Sources */,
+				CD7EC78924166A9A003C9A29 /* LockViewController.m in Sources */,
 				CD5326AD240A53EC00043426 /* Xiaoming.m in Sources */,
+				CD7EC77F2415D782003C9A29 /* ParentObj.m in Sources */,
 				CD054A06240E748A000FBD29 /* BlockViewController.m in Sources */,
 				CD5326A1240A1AF400043426 /* GCDViewController.m in Sources */,
 				CDADA54224107C33005F2C81 /* TimerViewController.m in Sources */,
+				CDC8C04124175FF100240B04 /* AsynViewController.m in Sources */,
 				CD5326CE240A927F00043426 /* NSOperationViewController.m in Sources */,
 				CD5326BF240A7E0200043426 /* Xiaoming+AAAAA.m in Sources */,
 				CD5326C7240A804D00043426 /* Xiaoming+BBBBBBB.m in Sources */,
@@ -406,6 +458,8 @@
 				CD5326C8240A804D00043426 /* Xiaoming+CCCCCC.m in Sources */,
 				CD53266B2409F2D800043426 /* SceneDelegate.m in Sources */,
 				CD5326932409F4BD00043426 /* MainViewController.m in Sources */,
+				CDC8C02E241722F800240B04 /* GestureViewController.m in Sources */,
+				CD7EC785241658C1003C9A29 /* SonObject.m in Sources */,
 				CD7EC77C2415D5CE003C9A29 /* DictionaryViewController.m in Sources */,
 				CD5326A4240A329100043426 /* WeakTimer.m in Sources */,
 			);

@@ -17,6 +17,9 @@
 #import "TimerViewController.h"
 #import "CALayerViewController.h"
 #import "DictionaryViewController.h"
+#import "LockViewController.h"
+#import "GestureViewController.h"
+#import "AsynViewController.h"
 
 @interface MainViewController ()
 
@@ -65,6 +68,18 @@
     dictionaryBtn.top = calayerBtn.bottom + 10;
     [self.view addSubview:dictionaryBtn];
     
+    UIButton *lockBtn = [self createButton:@"09.Lock" tag:1009];
+    lockBtn.top = dictionaryBtn.bottom + 10;
+    [self.view addSubview:lockBtn];
+    
+    UIButton *gestureBtn = [self createButton:@"10.gesture" tag:1010];
+    gestureBtn.top = lockBtn.bottom + 10;
+    [self.view addSubview:gestureBtn];
+    
+    UIButton *asynBtn = [self createButton:@"11.asyn" tag:1011];
+    asynBtn.top = gestureBtn.bottom + 10;
+    [self.view addSubview:asynBtn];
+    
     _customUIView = [[CustomUIView alloc] initWithFrame:CGRectMake(0, 300, 100, 100)];
     _customUIView.backgroundColor = [UIColor grayColor];
     _customUIView.aaa = @"sfasjfk122222";
@@ -111,6 +126,15 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if(btn.tag==1008){
         DictionaryViewController *vc = [[DictionaryViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if(btn.tag==1009){
+        LockViewController *vc = [[LockViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if(btn.tag==1010){
+        GestureViewController *vc = [[GestureViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if(btn.tag==1011){
+        AsynViewController *vc = [[AsynViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
