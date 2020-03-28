@@ -20,6 +20,7 @@
 #import "LockViewController.h"
 #import "GestureViewController.h"
 #import "AsynViewController.h"
+#import "ImageViewController.h"
 
 @interface MainViewController ()
 
@@ -80,9 +81,13 @@
     asynBtn.top = gestureBtn.bottom + 10;
     [self.view addSubview:asynBtn];
     
-    _customUIView = [[CustomUIView alloc] initWithFrame:CGRectMake(0, 300, 100, 100)];
-    _customUIView.backgroundColor = [UIColor grayColor];
-    _customUIView.aaa = @"sfasjfk122222";
+    UIButton *imageBtn = [self createButton:@"12.Image" tag:1012];
+    imageBtn.top = asynBtn.bottom + 10;
+    [self.view addSubview:imageBtn];
+    
+//    _customUIView = [[CustomUIView alloc] initWithFrame:CGRectMake(0, 300, 100, 100)];
+//    _customUIView.backgroundColor = [UIColor grayColor];
+//    _customUIView.aaa = @"sfasjfk122222";
 //    [self.view addSubview:_customUIView];
 }
 
@@ -97,13 +102,8 @@
 
 -(void)buttonClick:(id)sender{
     UIButton *btn = (UIButton *)sender;
-    
-    
-    
+
     if(btn.tag==1001){
-//        [_customUIView setNeedsLayout];
-[_customUIView lay];
-    
         RunloopViewController *runloopVC = [[RunloopViewController alloc] init];
         [self.navigationController pushViewController:runloopVC animated:YES];
     } else if(btn.tag==1002){
@@ -135,6 +135,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if(btn.tag==1011){
         AsynViewController *vc = [[AsynViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if(btn.tag==1012){
+        ImageViewController *vc = [[ImageViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

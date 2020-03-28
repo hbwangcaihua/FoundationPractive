@@ -1,5 +1,6 @@
 #import "SceneDelegate.h"
 #import "MainViewController.h"
+#import "OttoFPSButton.h"
 
 @interface SceneDelegate ()
 
@@ -20,6 +21,11 @@
     self.window.rootViewController = mainNC;
 
     [self.window makeKeyAndVisible];
+    
+    CGRect frame = CGRectMake(0, 300, 80, 30);
+    UIColor *btnBGColor = [UIColor colorWithWhite:0.000 alpha:0.700];
+    OttoFPSButton *btn = [OttoFPSButton setTouchWithFrame:frame titleFont:[UIFont systemFontOfSize:15] backgroundColor:btnBGColor backgroundImage:nil];
+    [self.window addSubview:btn];
 }
 
 

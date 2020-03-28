@@ -21,6 +21,8 @@
     
     self.title = @"gcd";
     
+//    [self testDispatchGroup];
+    
 //    [self performSelector:@selector(test:) withObject:nil afterDelay:2];
 
     //1. 子线程中延时执行：gcd,performSelector_after,NSTimer,NSThread中sleep
@@ -51,6 +53,51 @@
 //    } else {
 //        NSLog(@"wch-----------no---main");
 //    }
+}
+
+-(void)testDispatchGroup{
+
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(0, 0);
+    
+    dispatch_queue_t seriaQueue = dispatch_queue_create("xxxxxx", DISPATCH_QUEUE_SERIAL);
+        
+    dispatch_group_t group = dispatch_group_create();
+
+    dispatch_group_enter(group);
+    dispatch_async(seriaQueue, ^{
+//        [NSThread sleepForTimeInterval:5];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), globalQueue, ^{
+            NSLog(@"wch---------------0001");
+            dispatch_group_leave(group);
+        });
+        
+    });
+//    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+    
+    
+    dispatch_group_enter(group);
+    dispatch_async(seriaQueue, ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), globalQueue, ^{
+            NSLog(@"wch---------------0002");
+            dispatch_group_leave(group);
+        });
+    });
+//    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+    
+    dispatch_group_enter(group);
+    dispatch_async(seriaQueue, ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), globalQueue, ^{
+            NSLog(@"wch---------------0003");
+            dispatch_group_leave(group);
+        });
+    });
+    
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+    NSLog(@"wch---------------notify-----003");
+ 
+    dispatch_group_notify(group, seriaQueue, ^{
+        NSLog(@"wch---------------notify");
+    });
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AsynViewController.h"
+#import "AsyncLabel.h"
 
 @interface AsynViewController ()
 
@@ -18,6 +19,13 @@
     [super viewDidLoad];
     
     self.title = @"asyn";
+    
+    AsyncLabel *label = [[AsyncLabel alloc] initWithFrame:CGRectMake(50, 200, [UIScreen mainScreen].bounds.size.width - 2 * 50, 100)];
+    label.backgroundColor = [UIColor lightGrayColor];
+    label.text = @"今天是个好日子啊，心想的事儿都能成，今天是个好日子啊，啊，安心，太平";
+    label.font = [UIFont systemFontOfSize:20];
+    [self.view addSubview:label];
+    [label.layer setNeedsDisplay];
 }
 
 /*

@@ -20,9 +20,9 @@
     [super viewDidLoad];
     self.title = @"Gesture";
     
-    [self testForButton];
+//    [self testForButton];
     
-//    [self testForTableView];
+    [self testForTableView];
 }
 
 #pragma mark - UIButton和触摸事件
@@ -82,7 +82,7 @@
 //配置每个section(段）有多少row（行） cell
 //默认只有一个section
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 50;
 }
 //每行显示什么东西
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -106,8 +106,16 @@
 //某个cell被点击
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    [tableView rectForRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:0]];
+
     NSLog(@"wch------------------didSelect");
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"wch----------------%ld",indexPath.row);
+    
+    return 50;
 }
 
 #pragma mark - 事件

@@ -7,11 +7,15 @@
 //
 
 #import "Xiaoming.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
 
 @interface Xiaoming(){
     NSString *chengyuanM;
     
     NSString *_chengyuanM;
+    
+    NSString *asd;
 }
 
 @property(nonatomic,strong) NSString *xxxx;
@@ -87,5 +91,23 @@
 NSLog(@"wch-----------------key:%@",key);
      return [super automaticallyNotifiesObserversForKey:key];
  }
+ 
+ 
+// +(BOOL)resolveInstanceMethod:(SEL)sel{
+// NSLog(@"wch------------xiaoming----resolveInstanceMethod");
+////     if(sel == @selector(ttttt)){
+////         class_addMethod([self class], sel, (IMP)foo, "v@");
+////     }
+//     return [super resolveInstanceMethod:sel];
+// }
+// 
+// -(id)forwardingTargetForSelector:(SEL)aSelector{
+//     NSLog(@"wch------------xiaoming----forwardingTargetForSelector");
+//    return [super forwardingTargetForSelector:aSelector];
+// }
+
+// void foo(){
+//     NSLog(@"wch------------xiaoming----foo");
+// }
 
 @end

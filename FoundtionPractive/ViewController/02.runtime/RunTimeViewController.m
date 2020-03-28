@@ -29,6 +29,10 @@
     _xm = [[Xiaoming alloc] init];
     _xm.aaaaPro = @"aaaaPro";
     
+//    [_xm ttttt];
+//    objc_msgSend(_xm, @selector(ttttt));
+    [_xm performSelector:@selector(ttttt)];
+    
 //   _weakString = [NSString stringWithFormat:@"aaaaabbb"];
     
     //1. objc_msgSend

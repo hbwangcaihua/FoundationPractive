@@ -9,6 +9,7 @@
 #import "DictionaryViewController.h"
 #import "ParentObj.h"
 #import "SonObject.h"
+#import "NSString+testaa.h"
 
 @interface DictionaryViewController ()
 
@@ -21,6 +22,13 @@
     
     ParentObj *pa = [[ParentObj alloc] init];
     pa.pName = @"pName";
+    
+//    NSString *a = @"a";
+//    
+//    [a testExt];
+//    a.strExtend = @"2222";
+//
+//    NSLog(@"wch-------------%@",a.strExtend);
     
 //    NSLog(@"wch--------------NSMutableSet--1p%p",&pa);
 //    NSLog(@"wch--------------NSMutableSet--1:%ld",[pa hash]);
@@ -65,36 +73,37 @@
 //    NSLog(@"wch-----------------------[set containsObject:pa2]:%@",[set containsObject:pa2]?@"true":@"false");
 //    NSLog(@"wch-----------------------[set containsObject:pa3]:%@",[set containsObject:pa3]?@"true":@"false");
     
-    NSMutableDictionary *mulDic = [[NSMutableDictionary alloc] init];
-//    [mulDic setObject:@"s" forKey:pa];
-
-    SonObject *sonObj = [[SonObject alloc] init];
-    sonObj.sonName = @"SonObject";
-    sonObj.parentObj = pa;
-
-    [mulDic setObject:@"wer" forKey:sonObj];
-
-    SonObject *sonObj2 = [[SonObject alloc] init];
-    sonObj2.sonName = @"SonObjectsfdf";
-    sonObj2.parentObj = pa;
-
-    [mulDic setObject:@"wer234234" forKey:sonObj2];
-    
-//    SonObject *sonObj3 = [[SonObject alloc] init];
-//    sonObj3.sonName = @"SonObjec333333";
-//    sonObj3.parentObj = pa;
+//    NSMutableDictionary *mulDic = [[NSMutableDictionary alloc] init];
+////    [mulDic setObject:@"s" forKey:pa];
 //
-//    [mulDic setObject:@"wer3333333" forKey:sonObj3];
-    
+//    SonObject *sonObj = [[SonObject alloc] init];
+//    sonObj.sonName = @"SonObject";
+//    sonObj.parentObj = pa;
 //
-    NSLog(@"wch-------------------bbb---%ld", [mulDic allKeys].count );
-    NSString *a = [mulDic objectForKey:sonObj];
-    NSLog(@"wch-------------------a:%@",a);
-    NSString *b = [mulDic objectForKey:sonObj2];
-    NSLog(@"wch-------------------b:%@",b);
-//    NSString *c = [mulDic objectForKey:sonObj3];
-//    NSLog(@"wch-------------------c:%@",c);
-    NSLog(@"wch------------%@",mulDic);
+//    [mulDic setObject:@"wer" forKey:sonObj];
+//
+//    SonObject *sonObj2 = [[SonObject alloc] init];
+//    sonObj2.sonName = @"SonObjectsfdf";
+//    sonObj2.parentObj = pa;
+//
+//    [mulDic setObject:@"wer234234" forKey:sonObj2];
+//
+////    SonObject *sonObj3 = [[SonObject alloc] init];
+////    sonObj3.sonName = @"SonObjec333333";
+////    sonObj3.parentObj = pa;
+////
+////    [mulDic setObject:@"wer3333333" forKey:sonObj3];
+//
+////
+//    NSLog(@"wch-------------------bbb---%ld", [mulDic allKeys].count );
+//    NSString *a = [mulDic objectForKey:sonObj];
+//    NSLog(@"wch-------------------a:%@",a);
+//    NSString *b = [mulDic objectForKey:sonObj2];
+//    NSLog(@"wch-------------------b:%@",b);
+////    NSString *c = [mulDic objectForKey:sonObj3];
+////    NSLog(@"wch-------------------c:%@",c);
+//    NSLog(@"wch------------%@",mulDic);
 }
+
 
 @end

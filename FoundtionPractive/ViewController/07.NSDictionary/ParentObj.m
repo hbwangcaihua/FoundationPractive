@@ -7,6 +7,21 @@
 //
 
 #import "ParentObj.h"
+#import "NSString+testaa.h"
+
+//@synthesize strExtend=_strExtend;
+
+@implementation NSString(Extension)
+
+@dynamic strExtend;
+
+-(void)testExt{
+
+    self.strExtend = @"aaaaaaa";
+    NSLog(@"wch----------testExt:%@",self.strExtend);
+}
+
+@end
 
 @implementation ParentObj
 
