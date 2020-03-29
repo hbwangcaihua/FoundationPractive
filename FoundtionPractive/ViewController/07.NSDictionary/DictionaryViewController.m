@@ -23,6 +23,15 @@
     ParentObj *pa = [[ParentObj alloc] init];
     pa.pName = @"pName";
     
+    NSCache *cache = [[NSCache alloc] init];
+    [cache setObject:@"1" forKey:pa];
+    
+    SonObject *pb = [[SonObject alloc] init];
+//    pb.pName = @"pName";
+    
+    NSString *a = [cache objectForKey:@"xx"];
+    NSLog(@"wch-----------------a:%@",a);
+    
 //    NSString *a = @"a";
 //    
 //    [a testExt];

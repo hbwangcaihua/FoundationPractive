@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CD054A06240E748A000FBD29 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD054A05240E748A000FBD29 /* BlockViewController.m */; };
+		CD2DC9DD24302C7B007A8EF9 /* ScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2DC9DC24302C7B007A8EF9 /* ScrollPageView.m */; };
+		CD2DC9E024302D68007A8EF9 /* UIColor+YSTurnRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2DC9DF24302D68007A8EF9 /* UIColor+YSTurnRGB.m */; };
+		CD2DC9E324303B76007A8EF9 /* PageItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2DC9E224303B76007A8EF9 /* PageItemView.m */; };
 		CD5326682409F2D800043426 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326672409F2D800043426 /* AppDelegate.m */; };
 		CD53266B2409F2D800043426 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD53266A2409F2D800043426 /* SceneDelegate.m */; };
 		CD5326732409F2DC00043426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5326722409F2DC00043426 /* Assets.xcassets */; };
@@ -93,6 +96,12 @@
 /* Begin PBXFileReference section */
 		CD054A04240E748A000FBD29 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
 		CD054A05240E748A000FBD29 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		CD2DC9DB24302C7B007A8EF9 /* ScrollPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollPageView.h; sourceTree = "<group>"; };
+		CD2DC9DC24302C7B007A8EF9 /* ScrollPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollPageView.m; sourceTree = "<group>"; };
+		CD2DC9DE24302D68007A8EF9 /* UIColor+YSTurnRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YSTurnRGB.h"; sourceTree = "<group>"; };
+		CD2DC9DF24302D68007A8EF9 /* UIColor+YSTurnRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YSTurnRGB.m"; sourceTree = "<group>"; };
+		CD2DC9E124303B76007A8EF9 /* PageItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageItemView.h; sourceTree = "<group>"; };
+		CD2DC9E224303B76007A8EF9 /* PageItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageItemView.m; sourceTree = "<group>"; };
 		CD5326632409F2D800043426 /* FoundtionPractive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundtionPractive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5326662409F2D800043426 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD5326672409F2D800043426 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -265,6 +274,17 @@
 			path = 04.block;
 			sourceTree = "<group>";
 		};
+		CD2DC9DA24302BED007A8EF9 /* 12.PageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				CD2DC9DB24302C7B007A8EF9 /* ScrollPageView.h */,
+				CD2DC9DC24302C7B007A8EF9 /* ScrollPageView.m */,
+				CD2DC9E124303B76007A8EF9 /* PageItemView.h */,
+				CD2DC9E224303B76007A8EF9 /* PageItemView.m */,
+			);
+			path = 12.PageScrollView;
+			sourceTree = "<group>";
+		};
 		CD53265A2409F2D800043426 = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +362,7 @@
 				CDC8C02B241722D500240B04 /* 09.gesture */,
 				CDC8C03E24175FC200240B04 /* 10.AsynDisplay */,
 				CD8D3F05242712E200B8320D /* 11.Image */,
+				CD2DC9DA24302BED007A8EF9 /* 12.PageScrollView */,
 				CD5326912409F4BD00043426 /* MainViewController.h */,
 				CD5326922409F4BD00043426 /* MainViewController.m */,
 				CD5326CF240AA8A500043426 /* CustomUIView.h */,
@@ -366,6 +387,8 @@
 		CD5326982409F81300043426 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				CD2DC9DE24302D68007A8EF9 /* UIColor+YSTurnRGB.h */,
+				CD2DC9DF24302D68007A8EF9 /* UIColor+YSTurnRGB.m */,
 				CD53269A2409F82700043426 /* UIView+YSLayout.h */,
 				CD5326992409F82700043426 /* UIView+YSLayout.m */,
 			);
@@ -723,6 +746,7 @@
 				CD8D3EF2242712C700B8320D /* SDWebImageCoderHelper.m in Sources */,
 				CD8D3EFF242712C700B8320D /* UIImage+MemoryCacheCost.m in Sources */,
 				CD8D3EF6242712C700B8320D /* NSButton+WebCache.m in Sources */,
+				CD2DC9E024302D68007A8EF9 /* UIColor+YSTurnRGB.m in Sources */,
 				CD8D3EFB242712C700B8320D /* NSData+ImageContentType.m in Sources */,
 				CD8D3EEC242712C700B8320D /* SDWebImageFrame.m in Sources */,
 				CD5326AA240A53D800043426 /* Person.m in Sources */,
@@ -741,6 +765,7 @@
 				CD8D3EF0242712C700B8320D /* UIImage+GIF.m in Sources */,
 				CD8D3F03242712C700B8320D /* SDWebImageImageIOCoder.m in Sources */,
 				CD8D3EEE242712C700B8320D /* SDWebImageCodersManager.m in Sources */,
+				CD2DC9DD24302C7B007A8EF9 /* ScrollPageView.m in Sources */,
 				CD054A06240E748A000FBD29 /* BlockViewController.m in Sources */,
 				CD5326A1240A1AF400043426 /* GCDViewController.m in Sources */,
 				CD8D3EF8242712C700B8320D /* SDImageCache.m in Sources */,
@@ -753,6 +778,7 @@
 				CD8D3F21242729BC00B8320D /* WHDebugConsoleLabel.m in Sources */,
 				CD8D3F2724272A7E00B8320D /* OttoFPSButton.m in Sources */,
 				CD8D3F01242712C700B8320D /* UIView+WebCacheOperation.m in Sources */,
+				CD2DC9E324303B76007A8EF9 /* PageItemView.m in Sources */,
 				CD8D3F00242712C700B8320D /* SDImageCacheConfig.m in Sources */,
 				CD5326C7240A804D00043426 /* Xiaoming+BBBBBBB.m in Sources */,
 				CDADA54624108B3E005F2C81 /* CALayerViewController.m in Sources */,
@@ -924,6 +950,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QJHR7VGN4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FoundtionPractive/appdelegate/PrefixHeader.pch";
 				INFOPLIST_FILE = FoundtionPractive/Info.plist;
@@ -942,6 +969,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8QJHR7VGN4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FoundtionPractive/appdelegate/PrefixHeader.pch";
 				INFOPLIST_FILE = FoundtionPractive/Info.plist;

@@ -8,6 +8,7 @@
 
 #import "ImageViewController.h"
 #import "UIImageView+WebCache.h"
+#import "ScrollPageView.h"
 
 @interface ImageViewController ()
 
@@ -22,9 +23,11 @@
 
     self.title = @"Image";
     
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
     
-    _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 100, 200, 100)];
-    [self.view addSubview:_imgView];
+    
+//    _imgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 100, 200, 100)];
+//    [self.view addSubview:_imgView];
     
     
     UIButton *a = [[UIButton alloc] initWithFrame:CGRectMake(50, 250, 50, 50)];
@@ -33,35 +36,39 @@
     [self.view addSubview:a];
     
     
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(20, 320, 320, 200)];
-    scrollView.backgroundColor = [UIColor lightGrayColor];
-    for(int i=0;i<20;i++){
-        UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(1, i*50, 200, 50)];
-        l.text = [NSString stringWithFormat:@"%d",i];
-        [scrollView addSubview:l];
-        scrollView.contentSize = CGSizeMake(scrollView.width, l.bottom);
-    }
-    [self.view addSubview:scrollView];
+//    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(20, 320, 320, 200)];
+//    scrollView.backgroundColor = [UIColor lightGrayColor];
+//    for(int i=0;i<20;i++){
+//        UILabel *l = [[UILabel alloc] initWithFrame:CGRectMake(1, i*50, 200, 50)];
+//        l.text = [NSString stringWithFormat:@"%d",i];
+//        [scrollView addSubview:l];
+//        scrollView.contentSize = CGSizeMake(scrollView.width, l.bottom);
+//    }
+//    [self.view addSubview:scrollView];
     
 //    [imgView sd_setImageWithURL:[NSURL URLWithString:@"http://192.168.1.115:8000/test.jpg"] placeholderImage:[UIImage imageNamed:@"placeholder"]];
 }
 
 -(void)aaaaa{
-    NSLog(@"wch-------------aaaaa");
-//    [_imgView sd_setImageWithURL:[NSURL URLWithString:@"http://192.168.1.115:8000/test.jpg"] placeholderImage:[UIImage imageNamed:@"placeholder"]];
-    
-    NSURL *imageURL = [NSURL URLWithString:@"http://192.168.1.115:8000/test.jpg"];
-    //下载图片
-    NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-    
-    __weak typeof(self) weakSelf = self;
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-//        UIImage *decodeImage = [weakSelf AFInflatedImageFromResponseWithDataAtScale:imageData];
-    UIImage *decodeImage = [weakSelf sd_decompressedImageWithImage:imageData];
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            weakSelf.imgView.image = decodeImage;
-        });
-    });
+
+    ScrollPageView *scrollV = [[ScrollPageView alloc] init];
+    [scrollV showInParent:self.view];
+
+//    NSLog(@"wch-------------aaaaa");
+////    [_imgView sd_setImageWithURL:[NSURL URLWithString:@"http://192.168.1.115:8000/test.jpg"] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+//
+//    NSURL *imageURL = [NSURL URLWithString:@"http://192.168.1.115:8000/test.jpg"];
+//    //下载图片
+//    NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+//
+//    __weak typeof(self) weakSelf = self;
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+////        UIImage *decodeImage = [weakSelf AFInflatedImageFromResponseWithDataAtScale:imageData];
+//    UIImage *decodeImage = [weakSelf sd_decompressedImageWithImage:imageData];
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+//            weakSelf.imgView.image = decodeImage;
+//        });
+//    });
     
 //    UIImage *image = [UIImage imageWithData:imageData];
 //    _imgView.image = image;
