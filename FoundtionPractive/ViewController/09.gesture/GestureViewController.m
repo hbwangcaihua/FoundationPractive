@@ -20,9 +20,9 @@
     [super viewDidLoad];
     self.title = @"Gesture";
     
-//    [self testForButton];
+    [self testForButton];
     
-    [self testForTableView];
+//    [self testForTableView];
 }
 
 #pragma mark - UIButton和触摸事件
@@ -55,11 +55,18 @@
     
     
     UITapGestureRecognizer *tapGestur1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
-    [self.view addGestureRecognizer:tapGestur1];
+    [runloopBtn addGestureRecognizer:tapGestur1];
+    
+    UITapGestureRecognizer *tapGestur2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction2:)];
+    [self.view addGestureRecognizer:tapGestur2];
 }
 
 -(void)tapAction:(id)sender{
     NSLog(@"wch-----------------tapAction--手势");
+}
+
+-(void)tapAction2:(id)sender{
+    NSLog(@"wch-----------------tapAction--手势--button");
 }
 
 -(void)buttonClick:(id)sender{

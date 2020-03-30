@@ -11,6 +11,7 @@
 		CD2DC9DD24302C7B007A8EF9 /* ScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2DC9DC24302C7B007A8EF9 /* ScrollPageView.m */; };
 		CD2DC9E024302D68007A8EF9 /* UIColor+YSTurnRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2DC9DF24302D68007A8EF9 /* UIColor+YSTurnRGB.m */; };
 		CD2DC9E324303B76007A8EF9 /* PageItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2DC9E224303B76007A8EF9 /* PageItemView.m */; };
+		CD2DCA1F2430C12B007A8EF9 /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2DCA1E2430C12B007A8EF9 /* CustomScrollView.m */; };
 		CD5326682409F2D800043426 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5326672409F2D800043426 /* AppDelegate.m */; };
 		CD53266B2409F2D800043426 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD53266A2409F2D800043426 /* SceneDelegate.m */; };
 		CD5326732409F2DC00043426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5326722409F2DC00043426 /* Assets.xcassets */; };
@@ -102,6 +103,8 @@
 		CD2DC9DF24302D68007A8EF9 /* UIColor+YSTurnRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YSTurnRGB.m"; sourceTree = "<group>"; };
 		CD2DC9E124303B76007A8EF9 /* PageItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageItemView.h; sourceTree = "<group>"; };
 		CD2DC9E224303B76007A8EF9 /* PageItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageItemView.m; sourceTree = "<group>"; };
+		CD2DCA1D2430C12B007A8EF9 /* CustomScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomScrollView.h; sourceTree = "<group>"; };
+		CD2DCA1E2430C12B007A8EF9 /* CustomScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomScrollView.m; sourceTree = "<group>"; };
 		CD5326632409F2D800043426 /* FoundtionPractive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundtionPractive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5326662409F2D800043426 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD5326672409F2D800043426 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 				CD2DC9DC24302C7B007A8EF9 /* ScrollPageView.m */,
 				CD2DC9E124303B76007A8EF9 /* PageItemView.h */,
 				CD2DC9E224303B76007A8EF9 /* PageItemView.m */,
+				CD2DCA1D2430C12B007A8EF9 /* CustomScrollView.h */,
+				CD2DCA1E2430C12B007A8EF9 /* CustomScrollView.m */,
 			);
 			path = 12.PageScrollView;
 			sourceTree = "<group>";
@@ -744,6 +749,7 @@
 				CD8D3EFD242712C700B8320D /* NSImage+WebCache.m in Sources */,
 				CD8D3EF9242712C700B8320D /* SDWebImageDownloaderOperation.m in Sources */,
 				CD8D3EF2242712C700B8320D /* SDWebImageCoderHelper.m in Sources */,
+				CD2DCA1F2430C12B007A8EF9 /* CustomScrollView.m in Sources */,
 				CD8D3EFF242712C700B8320D /* UIImage+MemoryCacheCost.m in Sources */,
 				CD8D3EF6242712C700B8320D /* NSButton+WebCache.m in Sources */,
 				CD2DC9E024302D68007A8EF9 /* UIColor+YSTurnRGB.m in Sources */,

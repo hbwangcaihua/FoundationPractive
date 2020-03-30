@@ -30,7 +30,7 @@
 
 -(void)setUpSubViews{
     self.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
-//    self.backgroundColor =  [UIColor turnStringToRGB:@"0x000000" alpha:0.5f];
+    self.backgroundColor =  [UIColor turnStringToRGB:@"#000000" alpha:0.5f];
     
     _scrollContentView = [[UIScrollView alloc] initWithFrame:self.bounds];
     _scrollContentView.backgroundColor =  [UIColor clearColor];

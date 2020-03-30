@@ -84,12 +84,12 @@
     asynBtn.top = gestureBtn.bottom + 10;
     [self.view addSubview:asynBtn];
     
-    UIButton *imageBtn = [self createButton:@"12.Image" tag:1012];
-    imageBtn.top = asynBtn.bottom + 10;
-    [self.view addSubview:imageBtn];
+//    UIButton *imageBtn = [self createButton:@"12.Image" tag:1012];
+//    imageBtn.top = asynBtn.bottom + 10;
+//    [self.view addSubview:imageBtn];
     
     UIButton *scrollPageBtn = [self createButton:@"13.ScrollPage" tag:1013];
-    scrollPageBtn.top = imageBtn.bottom + 10;
+    scrollPageBtn.top = gestureBtn.bottom + 10;
     [self.view addSubview:scrollPageBtn];
     
 //    _customUIView = [[CustomUIView alloc] initWithFrame:CGRectMake(0, 300, 100, 100)];
